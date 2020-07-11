@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import forest from './1.jpg'
+// Import Ionic 5 styles
+import '@ionic/core/css/core.css';
+import '@ionic/core/css/ionic.bundle.css';
 import './App.css';
+
+import {
+  IonApp,
+  IonContent,
+  IonHeader,
+  IonTitle,
+  IonToolbar,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonButton
+} from '@ionic/react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container" styles={{ backgroundImage:`url(${forest})` }}>
+      <div class="title">
+        <h1>This is red car</h1>
+        </div>
     </div>
   );
 }
